@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
+    font-family: 'MyNerve', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #1c1e29;
 }
+
+/* .font-link {
+    font-family: 'Hanalei Fill', cursive;
+  } */
+  

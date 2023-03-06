@@ -38,12 +38,12 @@ const Home = () => {
         <div className="homePageWrapper">
             <div className="formWrapper">
             <div style={{display:"flex", flexDirection:"row"}}>
-                <img style={{height:"30px",width:"30px",borderRadius:"10px",marginTop:"8px"}}
+                <img style={{height:"20px",width:"20px",borderRadius:"6px",marginTop:"8px"}}
                     className="homePageLogo"
                     src="/sync1.png"
                     alt="code-sync-logo"
                 />
-                <h2 style={{marginTop:"0px",marginBottom:"30px"}}>Atune</h2>
+                <h2 style={{marginTop:"2px",marginBottom:"30px"}}>Atune</h2>
                 </div>
                 <h4 className="mainLabel">Paste invitation ROOM ID</h4>
                 <div className="inputGroup">
