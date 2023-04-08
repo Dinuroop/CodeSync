@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Codemirror from 'codemirror';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/dracula.css';
@@ -7,7 +7,7 @@ import 'codemirror/addon/edit/closetag';
 import 'codemirror/addon/edit/closebrackets';
 import ACTIONS from '../Actions';
 
-const Editor = ({ socketRef, roomId, onCodeChange, something }) => {
+const Editor = ({ socketRef, roomId, onCodeChange }) => {
     const editorRef = useRef(null);
     useEffect(() => {
         async function init() {
@@ -53,13 +53,20 @@ const Editor = ({ socketRef, roomId, onCodeChange, something }) => {
     }, [socketRef.current]);
 
 
-    // const something = "Hello";
+    // const [something, setSomething] = useState("");
+    // function onAdd(){
+    //     function addSome(){
+    //     setSomething("Hello")
+    //     }
+    // }
+
 
     return( 
     <>
     <textarea id="realtimeEditor">
-        {something}
+        {/* {something} */}
     </textarea>
+    {/* <button onClick={onAdd}>Some thing</button> */}
     </>)
 };
 

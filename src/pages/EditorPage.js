@@ -19,7 +19,7 @@ const EditorPage = () => {
     const reactNavigator = useNavigate();
     const [clients, setClients] = useState([]);
     const [text,setText] = useState("");
-    const [val,setVal] = useState("");
+    // const [val,setVal] = useState("");
 
     useEffect(() => {
         const init = async () => {
@@ -89,17 +89,17 @@ const EditorPage = () => {
         reactNavigator('/');
     }
 
-    const [something, setSomething] = useState("Hello I am Dinu");
+    // const [something, setSomething] = useState("Hello I am Dinu");
 
-  useEffect(()=>{
-    setSomething(val);
-    console.log(something);
-  },[val])
+//   useEffect(()=>{
+//     setSomething(val);
+//     console.log(something);
+//   },[val])
 
-        function onAdd(){
-             setVal("Bro")
-           console.log(val)
-       }
+    //     function onAdd(){
+    //          setVal("Bro")
+    //        console.log(val)
+    //    }
     
 
     if (!location.state) {
@@ -144,7 +144,7 @@ const EditorPage = () => {
                             src="/sync1.png"
                             alt="logo"
                         />
-                        <h2 style={{marginTop:"0px",marginBottom:"7px"}}> Atune </h2>
+                        <h2 style={{marginTop:"0px",marginBottom:"7px"}}> CodeSync </h2>
                     </div>
                     <h3>Connected</h3>
                     <div className="clientsList">
@@ -163,16 +163,16 @@ const EditorPage = () => {
                 <button className="btn leaveBtn" onClick={leaveRoom}>
                     Leave
                 </button>
-                <button className="btn leaveBtn" onClick={onAdd}>
+                {/* <button className="btn leaveBtn" onClick={onAdd}>
                     ADD
-                </button>
+                </button> */}
             </div>
             <div className="editorWrap">
                 <Editor
                     id = 'realtimeEditor'
                     socketRef={socketRef}
                     roomId={roomId}
-                    something = {something}
+                    // something = {something}
                     // codeRef.current = something;
                     onCodeChange={(text) => {
                         codeRef.current = text;

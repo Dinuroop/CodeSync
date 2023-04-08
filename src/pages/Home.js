@@ -43,7 +43,7 @@ const Home = () => {
                     src="/sync1.png"
                     alt="code-sync-logo"
                 />
-                <h2 style={{marginTop:"2px",marginBottom:"30px"}}>Atune</h2>
+                <h2 style={{marginTop:"2px",marginBottom:"30px"}}>CodeSync</h2>
                 </div>
                 <h4 className="mainLabel">Paste invitation ROOM ID</h4>
                 <div className="inputGroup">
